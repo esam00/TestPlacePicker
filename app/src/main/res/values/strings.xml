@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">FindPlaceSample</string>
+    <string name="places_api_key" translatable="false">your google places api key</string>
+    <string name="selected_address" translatable="false">Selected address</string>
+    <string name="choose_country" translatable="false">Country</string>
+    <string name="select_location_on_map" translatable="false">Select location on map</string>
+    <string name="supported_areas" translatable="false">User can only select locations which contains these literals.. \nSeparate each with comma</string>
+    <string name="supported_areas_hint" translatable="false">ex : cairo,القاهرة</string>
+    <string name="latitude" translatable="false">Latitude</string>
+    <string name="longitude" translatable="false">Longitude</string>
+    <string name="language" translatable="false">Language</string>
+
+    <string-array name="country_list">
+        <item>Egypt</item>
+        <item>Saudi arabia</item>
+        <item>Oman</item>
+        <item>Morocco</item>
+        <item>United States</item>
+        <item>India</item>
+    </string-array>
+
+    <string-array name="language_list">
+        <item>English</item>
+        <item>Arabic</item>
+    </string-array>
+</resources>
