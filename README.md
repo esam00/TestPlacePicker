@@ -15,15 +15,15 @@ this scenario with some customizations
 4. Listen for GPS configuration changes and ask user to enable GPS once it is disabled.
 
 ## Requirements : 
-1- Minimum SDK version 21
-2- Androidx
-3- Android studio version 4
-2- Google Places Api key
+1. Minimum SDK version 21
+2. Androidx
+3. Android studio version 4
+2. Google Places Api key
 
 ## Permissions :
    Make sure to add these permissions to your project's Manefist file 
-1- Internet 
-2- Access fine location 
+1. Internet
+2. Access fine location
 
 ## Dependency: 
 
@@ -38,5 +38,5 @@ allprojects {
 
 ## This SimplePlacePicker library is implemented with the help of :
 * MaterialSearchBar https://github.com/mancj/MaterialSearchBar
-* Ripple
+* android-ripple-background https://github.com/skyfishjy/android-ripple-background
 
