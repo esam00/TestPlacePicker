@@ -3,7 +3,9 @@ If you have a use case that requires searching and selecting a specific location
 Here is a simple independent module that you can simply import into your project to handle
 this scenario with some customizations
 
+<p align="center">
 <img src="screenshots/demo.gif" width=300>
+</p>
 
 ## Features  
 1. Rich autoComplete and search for any location with the ability to 
