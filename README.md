@@ -1,18 +1,38 @@
-# SearchBar 
-A simple App contains a search bar component that can search any thing on web 
+# SimplePlacePicker
+If you have a use case that requires searching and selecting a specific location on map ,
+Here is a simple independent module that you can simply import into your project to handle
+this scenario with some customizations 
 
 ## Features  
-a search bar like google’s one that contains the following features:
-1. User can type a URL (ex: fb.com) to open the web site directly.
-2. User can type a text to search on google (ex: facebook).
-3. Auto complete.
+1. Rich autoComplete and search for any location with the ability to 
+	filter results depending on country. 
+2. Get parsed string address for any location on map with a specified language. 
+3. Restrict specific supported areas for user to only pick from .
+4. Listen for GPS configuration changes and ask user to enable GPS once it is disabled.
 
-## screenShots 
-<img src="screenshots/home.png" width=300> <img src="screenshots/autocomplete.png" width=300>
-<img src="screenshots/searchGoogle.png" width=300> <img src="screenshots/searchUrl.png" width=300>
+## Requirements : 
+1- Minimum SDK version 21
+2- Androidx
+3- Android studio version 4
+2- Google Places Api key
 
-## Librarys 
+## Permissions :
+   Make sure to add these permissions to your project's Manefist file 
+1- Internet 
+2- Access fine location 
+
+## Dependency: 
+
+Build.gradle[project]
+allprojects {
+    repositories {
+        --
+        --
+        maven { url "https://jitpack.io" }
+    }
+}
+
+## This SimplePlacePicker library is implemented with the help of :
 * MaterialSearchBar https://github.com/mancj/MaterialSearchBar
-* Retrofit2
-* RxJava
-* Gson 
+* Ripple
+
