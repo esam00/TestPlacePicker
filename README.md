@@ -1,7 +1,9 @@
 # SimplePlacePicker
 If you have a use case that requires searching and selecting a specific location on map ,
 Here is a simple independent module that you can simply import into your project to handle
-this scenario with some customizations 
+this scenario with some customizations
+
+<img src="screenshots/demo.gif" width=300>
 
 ## Features  
 1. Rich autoComplete and search for any location with the ability to 
