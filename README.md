@@ -28,6 +28,7 @@ this scenario with some customizations
 ## Dependency: 
 
 Build.gradle[project]
+```
 allprojects {
     repositories {
         --
@@ -35,8 +36,9 @@ allprojects {
         maven { url "https://jitpack.io" }
     }
 }
+```
 
-## This SimplePlacePicker library is implemented with the help of :
+## SimplePlacePicker module is implemented with the help of :
 * MaterialSearchBar https://github.com/mancj/MaterialSearchBar
 * android-ripple-background https://github.com/skyfishjy/android-ripple-background
 
