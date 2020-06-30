@@ -20,7 +20,7 @@ this scenario with some customizations
 3. Google Places Api key
 
 ## Setup :
-Before importing simpleplacepicker module into your android project, make sure that :
+#### Before importing simpleplacepicker module into your android project, make sure that :
 1. your project manifest file contains internet and location permissions
 ```xml
 <uses-permission android:name="android.permission.INTERNET" />
@@ -49,7 +49,7 @@ allprojects {
   }
 }
 ```
-## How to import as module
+## How to import as Module
 1. Clone or download [simplePlacePicker](https://github.com/esam00/SimplePlacePicker) and save it at a path that you know.
 2. In your android project, Go to File > New > Import Module..
 3. Enter the path of simpleplacepicker module and click finish.
