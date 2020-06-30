@@ -28,7 +28,7 @@ Before importing simpleplacepicker module into your android project, make sure t
 <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 ```
 2. add meta_data for google api key in application tag within manifest file
-And make sure that you have original google places api key not only google maps key
+#### And make sure that you have original google places api key not only google maps key
 as autocomplete won't work without Places key.
 ```xml
 <application
@@ -40,7 +40,7 @@ as autocomplete won't work without Places key.
 </application>
 ```
 3. add this code to the the project level build.gradle file
-```
+```java
 allprojects {
   repositories {
     --
