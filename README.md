@@ -39,7 +39,7 @@ as autocomplete won't work without Places key.
         android:value="@string/places_api_key" />
 </application>
 ```
-3. in your build.gradle project level add this
+3. add this code to the the project level build.gradle file
 ```
 allprojects {
   repositories {
@@ -50,16 +50,16 @@ allprojects {
 }
 ```
 ## How to import as module
-1.Go to File > New > Import Module..
-2.Enter the path of simpleplacepicker module and click finish.
-3.After android studio finishes syncing, Now go to File > Project Structure and select Dependencies.
-4.Now you should see that you have two modules , your app module and simpleplacepicker module
-5.choose your app module and in Declared dependencies section click the plus icon and choose Module Dependency
-6.Now the last step choose simpleplacepicker and click Ok.
+1. Go to File > New > Import Module..
+2. Enter the path of simpleplacepicker module and click finish.
+3. After android studio finishes syncing, Now go to File > Project Structure and select Dependencies.
+4. Now you should see that you have two modules , your app module and simpleplacepicker module
+5. choose your app module and in Declared dependencies section click the plus icon and choose Module Dependency
+6. Now the last step choose simpleplacepicker and click Ok.
 
-# Now you are ready to use SimplePlacePicker as is part of your project
+### Now you are ready to use SimplePlacePicker as is part of your project
 just create intent and add extras to get some customization
-```
+```java
         Intent intent = new Intent(this, MapActivity.class);
         Bundle bundle = new Bundle();
 
