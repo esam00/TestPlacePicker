@@ -1,6 +1,6 @@
 # SimplePlacePicker Android
 If you have a use case that requires searching and selecting a specific location on map ,
-Here is a simple independent module that you can simply import into your project to handle
+Here is a nice independent module that you can simply import into your project to handle
 this scenario with some customizations
 
 <p align="center">
@@ -28,8 +28,6 @@ Before importing simpleplacepicker module into your android project, make sure t
 <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 ```
 2. add meta_data for google api key in application tag within manifest file
-#### And make sure that you have original google places api key not only google maps key
-as autocomplete won't work without Places key.
 ```xml
 <application
     --
@@ -39,6 +37,8 @@ as autocomplete won't work without Places key.
         android:value="@string/places_api_key" />
 </application>
 ```
+#### Make sure that you have original google places api key not only google maps key as autocomplete won't work without Places key.
+
 3. add this code to the the project level build.gradle file
 ```java
 allprojects {
@@ -53,12 +53,12 @@ allprojects {
 1. Clone or download [simplePlacePicker](https://github.com/esam00/SimplePlacePicker)
 2. Go to File > New > Import Module..
 3. Enter the path of simpleplacepicker module and click finish.
-4. After android studio finishes syncing, Now go to File > Project Structure and select Dependencies.
+4. After android studio finishes syncing, go to File > Project Structure and select Dependencies.
 5. Now you should see that you have two modules , your app module and simpleplacepicker module
-6. choose your app module and in Declared dependencies section click the plus icon and choose Module Dependency
-7. Now the last step choose simpleplacepicker and click Ok.
+6. Select app module and in Declared dependencies section click the plus icon and choose Module Dependency
+7. Choose simpleplacepicker and click Ok.
 
-### Now you are ready to use SimplePlacePicker as is part of your project
+### Now you are ready to use SimplePlacePicker as a part of your project ^-^
 just create intent and add extras to get some customization
 ```java
         Intent intent = new Intent(this, MapActivity.class);
