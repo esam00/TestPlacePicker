@@ -8,11 +8,11 @@ this scenario with some customizations
 </p>
 
 ## Features  
-1. Rich autoComplete and search for any location with the ability to 
+* Rich autoComplete and search for any location with the ability to
 	filter results depending on country. 
-2. Get parsed string address for any location on map with a specified language. 
-3. Restrict specific supported areas for user to only pick from .
-4. Listen for GPS configuration changes and ask user to enable GPS once it is disabled.
+* Get parsed string address for any location on map with a specified language.
+* Restrict specific supported areas for user to only pick from .
+* Listen for GPS configuration changes and ask user to enable GPS once it is disabled.
 
 ## Requirements : 
 1. Minimum SDK version 21
@@ -50,12 +50,13 @@ allprojects {
 }
 ```
 ## How to import as module
-1. Go to File > New > Import Module..
-2. Enter the path of simpleplacepicker module and click finish.
-3. After android studio finishes syncing, Now go to File > Project Structure and select Dependencies.
-4. Now you should see that you have two modules , your app module and simpleplacepicker module
-5. choose your app module and in Declared dependencies section click the plus icon and choose Module Dependency
-6. Now the last step choose simpleplacepicker and click Ok.
+1. Clone or download [simplePlacePicker](https://github.com/esam00/SimplePlacePicker)
+2. Go to File > New > Import Module..
+3. Enter the path of simpleplacepicker module and click finish.
+4. After android studio finishes syncing, Now go to File > Project Structure and select Dependencies.
+5. Now you should see that you have two modules , your app module and simpleplacepicker module
+6. choose your app module and in Declared dependencies section click the plus icon and choose Module Dependency
+7. Now the last step choose simpleplacepicker and click Ok.
 
 ### Now you are ready to use SimplePlacePicker as is part of your project
 just create intent and add extras to get some customization
