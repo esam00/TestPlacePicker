@@ -50,8 +50,8 @@ allprojects {
 }
 ```
 ## How to import as module
-1. Clone or download [simplePlacePicker](https://github.com/esam00/SimplePlacePicker)
-2. Go to File > New > Import Module..
+1. Clone or download [simplePlacePicker](https://github.com/esam00/SimplePlacePicker) and save it in a path that you know.
+2. In your android project, Go to File > New > Import Module..
 3. Enter the path of simpleplacepicker module and click finish.
 4. After android studio finishes syncing, go to File > Project Structure and select Dependencies.
 5. Now you should see that you have two modules , your app module and simpleplacepicker module
