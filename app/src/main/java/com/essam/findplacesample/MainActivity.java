@@ -83,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
      *               { you must get a places key it's required for search autocomplete }
      * @param country Optional parameter to restrict autocomplete search to a specific country
      *                put country ISO like "eg" for Egypt and so on ..
-     *                if there is no value attached to RESTRICT_PREDICTIONS_COUNTRY key, search will
+     *                if there is no value attached to COUNTRY key, search will
      *                be worldWide
      * @param language Optional parameter to specify the language of the resulting address
      *                 could be "en" for English or "ar" for Arabic .
@@ -91,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
      *
      * @param supportedAreas Optional Array of supported areas that user can pick a location from.
      *                       Please be careful when you put areas as this will be literal comparison.
-     *                       Ex : if you put the value of RESTRICT_LOCATION_SUPPORTED_AREAS key
+     *                       Ex : if you put the value of SUPPORTED_AREAS key
      *                       to something like {"Cairo"} , user will only be able to select the address
      *                       that only contains cairo on it, like "zamalec,cairo,Egypt"
      *                       Also consider adding arabic translation as some google addresses contains
@@ -101,15 +101,18 @@ public class MainActivity extends AppCompatActivity {
      *                       it was something like {"Egypt","مصر"}
      *                       if this array was empty, the whole world is a supported area , user can
      *                       pick location anywhere!.
-     * @return result bundle to be passed through an Intent to MapActivity
      */
-    private Bundle createBundle(String apiKey, String country, String language, String[]supportedAreas){
+    private void startMapActivity(String apiKey, String country, String language, String[]supportedAreas){
+        Intent intent = new Intent(this, MapActivity.class);
         Bundle bundle = new Bundle();
+
         bundle.putString(SimplePlacePicker.API_KEY,apiKey);
         bundle.putString(SimplePlacePicker.COUNTRY,country);
         bundle.putString(SimplePlacePicker.LANGUAGE,language);
         bundle.putStringArray(SimplePlacePicker.SUPPORTED_AREAS,supportedAreas);
-        return bundle;
+
+        intent.putExtras(bundle);
+        startActivityForResult(intent, SimplePlacePicker.SELECT_LOCATION_REQUEST_CODE);
     }
 
     private void selectLocationOnMap() {
@@ -117,10 +120,7 @@ public class MainActivity extends AppCompatActivity {
         String mCountry = countryListIso[mCountryListSpinner.getSelectedItemPosition()];
         String mLanguage = addressLanguageList[mLanguageSpinner.getSelectedItemPosition()];
         String [] mSupportedAreas = mSupportedAreaEt.getText().toString().split(",");
-
-        Intent intent = new Intent(this, MapActivity.class);
-        intent.putExtras(createBundle(apiKey,mCountry, mLanguage, mSupportedAreas));
-        startActivityForResult(intent, SimplePlacePicker.SELECT_LOCATION_REQUEST_CODE);
+        startMapActivity(apiKey,mCountry,mLanguage,mSupportedAreas);
     }
 
     private void updateUi(Intent data){
